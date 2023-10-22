@@ -1,16 +1,14 @@
 <template>
-    <NavbarLayout/>
-    <div>
-        <RouterView/>
-    </div>
-    <BottomLayout/>
+    <main class="flex">
+        <LeftSitebarLayout/>
+        <b-container>
+            <RouterView/>
+        </b-container>
+    </main>
 </template>
 
 <script setup lang="ts">
-import NavbarLayout from './NavbarLayout.vue';
-import BottomLayout from './BottomLayout.vue';
-
-
+import LeftSitebarLayout from './LeftSitebarLayout.vue';
 </script>
 
 <style scoped>
